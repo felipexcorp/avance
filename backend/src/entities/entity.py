@@ -21,12 +21,13 @@ db_name = 'test'
 db_user = 'felipe'
 db_password = 'teamo'
 engine = create_engine(f'mysql+mysqlconnector://{db_user}:{db_password}@{db_url}/{db_name}')
+
 Session = sessionmaker(bind=engine)
 
 Base = declarative_base()
 
 print('### Base:', Base)
-
+print('### Base:', engine)
 
 class Entity():
     id              = Column(Integer, primary_key=True)
