@@ -27,4 +27,4 @@ if len(exams) == 0:
 print('### Exams:')
 for exam in exams :
     print(f'({exam.id}) {exam.title} - {exam.description} {exam.created_at} {exam.updated_at}')
-git remote add origin https://github.com/felipexcorp/avance.git
+# git remote add origin https://github.com/felipexcorp/avance.git
